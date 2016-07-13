@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94D257781D35E9FA00F71928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D257771D35E9FA00F71928 /* AppDelegate.swift */; };
+		94D2577A1D35E9FA00F71928 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D257791D35E9FA00F71928 /* ViewController.swift */; };
+		94D2577D1D35E9FA00F71928 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D2577B1D35E9FA00F71928 /* Main.storyboard */; };
+		94D2577F1D35E9FA00F71928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D2577E1D35E9FA00F71928 /* Assets.xcassets */; };
+		94D257821D35E9FA00F71928 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D257801D35E9FA00F71928 /* LaunchScreen.storyboard */; };
+		94D257871D35E9FB00F71928 /* Nihon CC WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 94D257861D35E9FB00F71928 /* Nihon CC WatchKit App.app */; };
+		94D2578D1D35E9FB00F71928 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D2578B1D35E9FB00F71928 /* Interface.storyboard */; };
+		94D2578F1D35E9FB00F71928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D2578E1D35E9FB00F71928 /* Assets.xcassets */; };
+		94D257961D35E9FB00F71928 /* Nihon CC WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94D257951D35E9FB00F71928 /* Nihon CC WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94D2579D1D35E9FB00F71928 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2579C1D35E9FB00F71928 /* InterfaceController.swift */; };
+		94D2579F1D35E9FB00F71928 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D2579E1D35E9FB00F71928 /* ExtensionDelegate.swift */; };
+		94D257A11D35E9FB00F71928 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D257A01D35E9FB00F71928 /* NotificationController.swift */; };
+		94D257A31D35E9FB00F71928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D257A21D35E9FB00F71928 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94D257881D35E9FB00F71928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94D2576C1D35E9FA00F71928 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94D257851D35E9FB00F71928;
+			remoteInfo = "Nihon CC WatchKit App";
+		};
+		94D257971D35E9FB00F71928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94D2576C1D35E9FA00F71928 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94D257941D35E9FB00F71928;
+			remoteInfo = "Nihon CC WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94D257AA1D35E9FB00F71928 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				94D257961D35E9FB00F71928 /* Nihon CC WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D257AE1D35E9FB00F71928 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				94D257871D35E9FB00F71928 /* Nihon CC WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		94D257741D35E9FA00F71928 /* Nihon CC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nihon CC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D257771D35E9FA00F71928 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94D257791D35E9FA00F71928 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94D2577C1D35E9FA00F71928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94D2577E1D35E9FA00F71928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94D257811D35E9FA00F71928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94D257831D35E9FA00F71928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D257861D35E9FB00F71928 /* Nihon CC WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nihon CC WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D2578C1D35E9FB00F71928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		94D2578E1D35E9FB00F71928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94D257901D35E9FB00F71928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D257951D35E9FB00F71928 /* Nihon CC WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Nihon CC WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D2579B1D35E9FB00F71928 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		94D2579C1D35E9FB00F71928 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		94D2579E1D35E9FB00F71928 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		94D257A01D35E9FB00F71928 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		94D257A21D35E9FB00F71928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94D257A41D35E9FB00F71928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94D257711D35E9FA00F71928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D257921D35E9FB00F71928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94D2576B1D35E9FA00F71928 = {
+			isa = PBXGroup;
+			children = (
+				94D257761D35E9FA00F71928 /* Nihon CC */,
+				94D2578A1D35E9FB00F71928 /* Nihon CC WatchKit App */,
+				94D257991D35E9FB00F71928 /* Nihon CC WatchKit Extension */,
+				94D257751D35E9FA00F71928 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94D257751D35E9FA00F71928 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94D257741D35E9FA00F71928 /* Nihon CC.app */,
+				94D257861D35E9FB00F71928 /* Nihon CC WatchKit App.app */,
+				94D257951D35E9FB00F71928 /* Nihon CC WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94D257761D35E9FA00F71928 /* Nihon CC */ = {
+			isa = PBXGroup;
+			children = (
+				94D257771D35E9FA00F71928 /* AppDelegate.swift */,
+				94D257791D35E9FA00F71928 /* ViewController.swift */,
+				94D2577B1D35E9FA00F71928 /* Main.storyboard */,
+				94D2577E1D35E9FA00F71928 /* Assets.xcassets */,
+				94D257801D35E9FA00F71928 /* LaunchScreen.storyboard */,
+				94D257831D35E9FA00F71928 /* Info.plist */,
+			);
+			path = "Nihon CC";
+			sourceTree = "<group>";
+		};
+		94D2578A1D35E9FB00F71928 /* Nihon CC WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				94D2578B1D35E9FB00F71928 /* Interface.storyboard */,
+				94D2578E1D35E9FB00F71928 /* Assets.xcassets */,
+				94D257901D35E9FB00F71928 /* Info.plist */,
+			);
+			path = "Nihon CC WatchKit App";
+			sourceTree = "<group>";
+		};
+		94D257991D35E9FB00F71928 /* Nihon CC WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				94D2579C1D35E9FB00F71928 /* InterfaceController.swift */,
+				94D2579E1D35E9FB00F71928 /* ExtensionDelegate.swift */,
+				94D257A01D35E9FB00F71928 /* NotificationController.swift */,
+				94D257A21D35E9FB00F71928 /* Assets.xcassets */,
+				94D257A41D35E9FB00F71928 /* Info.plist */,
+				94D2579A1D35E9FB00F71928 /* Supporting Files */,
+			);
+			path = "Nihon CC WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		94D2579A1D35E9FB00F71928 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94D2579B1D35E9FB00F71928 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94D257731D35E9FA00F71928 /* Nihon CC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94D257AF1D35E9FB00F71928 /* Build configuration list for PBXNativeTarget "Nihon CC" */;
+			buildPhases = (
+				94D257701D35E9FA00F71928 /* Sources */,
+				94D257711D35E9FA00F71928 /* Frameworks */,
+				94D257721D35E9FA00F71928 /* Resources */,
+				94D257AE1D35E9FB00F71928 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94D257891D35E9FB00F71928 /* PBXTargetDependency */,
+			);
+			name = "Nihon CC";
+			productName = "Nihon CC";
+			productReference = 94D257741D35E9FA00F71928 /* Nihon CC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94D257851D35E9FB00F71928 /* Nihon CC WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94D257AB1D35E9FB00F71928 /* Build configuration list for PBXNativeTarget "Nihon CC WatchKit App" */;
+			buildPhases = (
+				94D257841D35E9FB00F71928 /* Resources */,
+				94D257AA1D35E9FB00F71928 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94D257981D35E9FB00F71928 /* PBXTargetDependency */,
+			);
+			name = "Nihon CC WatchKit App";
+			productName = "Nihon CC WatchKit App";
+			productReference = 94D257861D35E9FB00F71928 /* Nihon CC WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		94D257941D35E9FB00F71928 /* Nihon CC WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94D257A71D35E9FB00F71928 /* Build configuration list for PBXNativeTarget "Nihon CC WatchKit Extension" */;
+			buildPhases = (
+				94D257911D35E9FB00F71928 /* Sources */,
+				94D257921D35E9FB00F71928 /* Frameworks */,
+				94D257931D35E9FB00F71928 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nihon CC WatchKit Extension";
+			productName = "Nihon CC WatchKit Extension";
+			productReference = 94D257951D35E9FB00F71928 /* Nihon CC WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94D2576C1D35E9FA00F71928 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = AkibaTeaParty;
+				TargetAttributes = {
+					94D257731D35E9FA00F71928 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					94D257851D35E9FB00F71928 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					94D257941D35E9FB00F71928 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 94D2576F1D35E9FA00F71928 /* Build configuration list for PBXProject "Nihon CC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94D2576B1D35E9FA00F71928;
+			productRefGroup = 94D257751D35E9FA00F71928 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94D257731D35E9FA00F71928 /* Nihon CC */,
+				94D257851D35E9FB00F71928 /* Nihon CC WatchKit App */,
+				94D257941D35E9FB00F71928 /* Nihon CC WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94D257721D35E9FA00F71928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D257821D35E9FA00F71928 /* LaunchScreen.storyboard in Resources */,
+				94D2577F1D35E9FA00F71928 /* Assets.xcassets in Resources */,
+				94D2577D1D35E9FA00F71928 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D257841D35E9FB00F71928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D2578F1D35E9FB00F71928 /* Assets.xcassets in Resources */,
+				94D2578D1D35E9FB00F71928 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D257931D35E9FB00F71928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D257A31D35E9FB00F71928 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94D257701D35E9FA00F71928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D2577A1D35E9FA00F71928 /* ViewController.swift in Sources */,
+				94D257781D35E9FA00F71928 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94D257911D35E9FB00F71928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D257A11D35E9FB00F71928 /* NotificationController.swift in Sources */,
+				94D2579F1D35E9FB00F71928 /* ExtensionDelegate.swift in Sources */,
+				94D2579D1D35E9FB00F71928 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94D257891D35E9FB00F71928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94D257851D35E9FB00F71928 /* Nihon CC WatchKit App */;
+			targetProxy = 94D257881D35E9FB00F71928 /* PBXContainerItemProxy */;
+		};
+		94D257981D35E9FB00F71928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94D257941D35E9FB00F71928 /* Nihon CC WatchKit Extension */;
+			targetProxy = 94D257971D35E9FB00F71928 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94D2577B1D35E9FA00F71928 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94D2577C1D35E9FA00F71928 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94D257801D35E9FA00F71928 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94D257811D35E9FA00F71928 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		94D2578B1D35E9FB00F71928 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94D2578C1D35E9FB00F71928 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94D257A51D35E9FB00F71928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94D257A61D35E9FB00F71928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94D257A81D35E9FB00F71928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Nihon CC WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AkibaTeaParty.Nihon-CC.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		94D257A91D35E9FB00F71928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Nihon CC WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AkibaTeaParty.Nihon-CC.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		94D257AC1D35E9FB00F71928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Nihon_CC_WatchKit_Extension;
+				INFOPLIST_FILE = "Nihon CC WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "AkibaTeaParty.Nihon-CC.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		94D257AD1D35E9FB00F71928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Nihon_CC_WatchKit_Extension;
+				INFOPLIST_FILE = "Nihon CC WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "AkibaTeaParty.Nihon-CC.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		94D257B01D35E9FB00F71928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Nihon CC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AkibaTeaParty.Nihon-CC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		94D257B11D35E9FB00F71928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Nihon CC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AkibaTeaParty.Nihon-CC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94D2576F1D35E9FA00F71928 /* Build configuration list for PBXProject "Nihon CC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D257A51D35E9FB00F71928 /* Debug */,
+				94D257A61D35E9FB00F71928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94D257A71D35E9FB00F71928 /* Build configuration list for PBXNativeTarget "Nihon CC WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D257A81D35E9FB00F71928 /* Debug */,
+				94D257A91D35E9FB00F71928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		94D257AB1D35E9FB00F71928 /* Build configuration list for PBXNativeTarget "Nihon CC WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D257AC1D35E9FB00F71928 /* Debug */,
+				94D257AD1D35E9FB00F71928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		94D257AF1D35E9FB00F71928 /* Build configuration list for PBXNativeTarget "Nihon CC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94D257B01D35E9FB00F71928 /* Debug */,
+				94D257B11D35E9FB00F71928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94D2576C1D35E9FA00F71928 /* Project object */;
+}
