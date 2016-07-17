@@ -1,25 +1,316 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A239m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XCM-fN-3Rb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Nihon CC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Nihon_CC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background Menu" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-U0-xQ1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNM-pL-FIY" userLabel="Home">
+                                <rect key="frame" x="40" y="150" width="100" height="100"/>
+                                <state key="normal" backgroundImage="Home Menu"/>
+                                <connections>
+                                    <segue destination="mTo-5z-k8R" kind="show" id="bmK-1t-fsb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEj-8s-Zlt" userLabel="Tokyo">
+                                <rect key="frame" x="230" y="150" width="100" height="100"/>
+                                <state key="normal" backgroundImage="Tokyo Menu"/>
+                                <connections>
+                                    <segue destination="iy9-91-ErK" kind="show" id="owv-Ky-0cJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TQ-Fp-aeo" userLabel="Osaka">
+                                <rect key="frame" x="40" y="280" width="100" height="100"/>
+                                <state key="normal" backgroundImage="Osaka Menu"/>
+                                <connections>
+                                    <segue destination="K8T-vZ-aCA" kind="show" id="k78-WT-a9H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Da-g7-fmt" userLabel="JR Pass">
+                                <rect key="frame" x="40" y="410" width="100" height="100"/>
+                                <state key="normal" backgroundImage="JR Pass Menu"/>
+                                <connections>
+                                    <segue destination="aDE-xd-CDa" kind="show" id="nxM-XB-bbU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8L-oi-a8Q" userLabel="Translate">
+                                <rect key="frame" x="230" y="410" width="100" height="100"/>
+                                <state key="normal" backgroundImage="Translate Menu"/>
+                                <connections>
+                                    <segue destination="pKs-AN-Mro" kind="show" id="rIK-eh-BfE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCM-YR-Y9k" userLabel="Alarm">
+                                <rect key="frame" x="40" y="540" width="100" height="100"/>
+                                <state key="normal" backgroundImage="Alarm Menu"/>
+                                <connections>
+                                    <segue destination="lfh-Qt-YE6" kind="show" id="Hxf-Jl-Rex"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVT-yg-Waf" userLabel="Stuff">
+                                <rect key="frame" x="230" y="540" width="100" height="100"/>
+                                <state key="normal" backgroundImage="Stuff Menu"/>
+                                <connections>
+                                    <segue destination="V5d-yn-RG7" kind="show" id="LXj-sj-f9l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qb0-ci-y4g" userLabel="Kyoto">
+                                <rect key="frame" x="230" y="280" width="100" height="100"/>
+                                <state key="normal" backgroundImage="Kyoto Menu"/>
+                                <connections>
+                                    <segue destination="dai-qm-e0l" kind="show" id="qth-Dn-DR7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Nihon CC" id="JIe-hr-HgX">
+                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="OIc-4P-hhM"/>
+                        <barButtonItem key="rightBarButtonItem" title="Dineros" id="e3O-xP-bay">
+                            <connections>
+                                <segue destination="7Lx-Uc-FYL" kind="show" id="rXZ-x9-4Rw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2095" y="1083"/>
+        </scene>
+        <!--Osaka-->
+        <scene sceneID="ydL-ty-7dw">
+            <objects>
+                <viewController id="K8T-vZ-aCA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lFp-hA-RMR"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Sy-0I-TIW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c9s-Sy-e4W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Osaka" id="i1K-Qg-ZqO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eS8-mo-bnv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2622" y="1839"/>
+        </scene>
+        <!--JR Pass-->
+        <scene sceneID="F88-Zd-QWg">
+            <objects>
+                <viewController id="aDE-xd-CDa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YQT-xa-HvO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rww-XC-08h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pkk-hY-86W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="JR Pass" id="o1C-Zt-CgT"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ThR-m8-ETN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2622" y="3499"/>
+        </scene>
+        <!--Alarm-->
+        <scene sceneID="uv4-M0-1fa">
+            <objects>
+                <viewController id="lfh-Qt-YE6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s6h-zG-STU"/>
+                        <viewControllerLayoutGuide type="bottom" id="961-e8-OmI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t6N-Qk-DmH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Alarm" id="UqS-IR-6bB"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dIq-bE-OjD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2622" y="5173"/>
+        </scene>
+        <!--Stuff-->
+        <scene sceneID="NkD-yA-NMU">
+            <objects>
+                <viewController id="V5d-yn-RG7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wEz-yy-plT"/>
+                        <viewControllerLayoutGuide type="bottom" id="a5S-0r-GWL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vgf-Md-okg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Stuff" id="IL7-Tp-2qh"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oV2-wT-PWQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3114" y="5173"/>
+        </scene>
+        <!--Translate-->
+        <scene sceneID="Cvr-Bj-0PW">
+            <objects>
+                <viewController id="pKs-AN-Mro" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PCx-aZ-Dkf"/>
+                        <viewControllerLayoutGuide type="bottom" id="6xZ-d4-Pjv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RS0-dd-cCi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Translate" id="esR-4B-kQ6"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Hi-sf-VHP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3114" y="3499"/>
+        </scene>
+        <!--Kyoto-->
+        <scene sceneID="dMo-bU-rnw">
+            <objects>
+                <viewController id="dai-qm-e0l" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nU1-9H-vzH"/>
+                        <viewControllerLayoutGuide type="bottom" id="aij-NI-nqz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ogY-RG-cNv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Kyoto" id="0Zd-9j-kEI"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XeC-ee-3pl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3114" y="1839"/>
+        </scene>
+        <!--Tokyo-->
+        <scene sceneID="NmY-sc-U8F">
+            <objects>
+                <viewController id="iy9-91-ErK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xGB-9q-oDq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ppx-dm-fh8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wvE-PT-J1a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tokyo" id="Dx6-H5-tfP"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E32-7y-Nhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3114" y="182"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="oCk-tU-t6h">
+            <objects>
+                <viewController id="mTo-5z-k8R" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j2Z-7n-h2N"/>
+                        <viewControllerLayoutGuide type="bottom" id="b0g-L1-IRF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H0C-if-qLv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="0ze-hI-sht"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6I-aG-PXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2622" y="176"/>
+        </scene>
+        <!--Dineros-->
+        <scene sceneID="z13-xq-f37">
+            <objects>
+                <viewController id="7Lx-Uc-FYL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5kK-7j-37P"/>
+                        <viewControllerLayoutGuide type="bottom" id="g08-5R-jKx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="09j-KF-WyS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dineros" id="dlB-CL-25u"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iK4-Ma-erW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2095" y="-74"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6E1-lx-PJV">
+            <objects>
+                <navigationController modalTransitionStyle="crossDissolve" id="XCM-fN-3Rb" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="682-fc-p8a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GbL-Ve-90x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mrp-LY-EnM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1468" y="1083"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Alarm Menu" width="79" height="70"/>
+        <image name="Background Menu" width="180" height="320"/>
+        <image name="Home Menu" width="93" height="88"/>
+        <image name="JR Pass Menu" width="93" height="61"/>
+        <image name="Kyoto Menu" width="59" height="74"/>
+        <image name="Osaka Menu" width="93" height="90"/>
+        <image name="Stuff Menu" width="118" height="99"/>
+        <image name="Tokyo Menu" width="94" height="116"/>
+        <image name="Translate Menu" width="118" height="102"/>
+    </resources>
 </document>
